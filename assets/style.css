@@ -1,33 +1,32 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    /*adding auto into line 5*/
     margin: 0 auto;
 }
 
 body {
-    background-color: #d9dcd6;
-    /*adding line 11&12*/
-    background-size: initial;
-    font-stretch: initial;
+    background-color: lightcyan;
+    font-family: Arial;
+    margin: 0;
 }
 
 .header {
     padding: 20px;
     font-display: block;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgba(58, 138, 131, 0.589);
+    background-color: lightcyan;
     color:black
     
 }
 
-.header h1{
+.header h1 {
     display: inline-block;
     display: flexbox;
     font-size: 80px
 }
 
-.header nav{
+.header nav {
+    display: flex;
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -35,40 +34,104 @@ body {
     font-size: 20px;
 }
 
-.header nav ul{
+.header nav ul { 
     list-style-type: none;
 }
 
-.header nav ul li{
+.header nav ul li {
     display: inline-block;
     display: flexbox;
     margin-left: 25px;
 }
 
-a{
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*.float-left {
+    float: left;
+    margin-left: 25px;
+}*/
+
+/*.float-right {
+    float: right;
+    margin-left: 25px;
+}*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    
+    flex: 1;
+    border-width: 4px;
+    border-right: solid;
+    border-color: black;
+    background: beige;
+    padding: 140px;
+    text-align: center;
+}
+
+article {
+    
+    flex: 5;
+    background-color: beige;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+    background: lightcyan;
     color: black;
 }
 
-p{
-
+.detail {
+    
 }
 
-.float-left{
-    float: left;
-    margin-left: 25px;
-}
-
-.float-right{
-    float: right;
-    margin-left: 25px;
-}
-
-.aside{
-    border: black;
+.keninfo {
+    border-style: solid;
+    border-width: 2px;
     border-radius: 10px;
-    float: left;
+    padding: 10px;
+    flex: 0 0 580px;
 }
 
-.article{
-    float: right;
+.projectsinfo {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 580px;
+}
+
+.contactinfo {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 580px;
+}
+
+.resumeinfo {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 580px;
+}
+
+@media screen and (max-width: 768) {
+    main,
+    nav {
+        flex-direction: column;
+    }
 }
