@@ -1,2 +1,2 @@
-# Ken-Chen-Portfolio
-Public
+# KenChenPortfolio
+*Ken Chen Portfolio
