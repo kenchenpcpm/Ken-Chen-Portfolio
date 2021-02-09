@@ -5,87 +5,71 @@
 }
 
 body {
-    background-color: lightcyan;
     font-family: Arial;
     margin: 0;
+    background-color: beige;
 }
 
-.header {
-    padding: 20px;
-    font-display: block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
     background-color: lightcyan;
     color:black
     
 }
 
-.header h1 {
-    display: inline-block;
-    display: flexbox;
-    font-size: 80px
+header h1 {
+    margin: 2%;
+    font-size: 200%;
+    font-family: serif;
 }
 
-.header nav {
+nav ul {
     display: flex;
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-}
+    justify-content: space-between;
+    min-width: 300px;
+   }
 
-.header nav ul { 
-    list-style-type: none;
-}
-
-.header nav ul li {
-    display: inline-block;
-    display: flexbox;
-    margin-left: 25px;
-}
-
-a {
+nav a {
     color: black;
+    font-weight: bold;
     text-decoration: none;
+    text-align: center;
 }
-
-/*.float-left {
-    float: left;
-    margin-left: 25px;
-}*/
-
-/*.float-right {
-    float: right;
-    margin-left: 25px;
-}*/
 
 main {
+    background-color: beige;
     display: flex;
+    flex: 1 1 0;;
+    max-width: 1200px;
+    margin: 2% auto;
     flex-wrap: wrap;
 }
 
 aside {
-    
     flex: 1;
     border-width: 4px;
     border-right: solid;
     border-color: black;
-    background: beige;
-    padding: 140px;
-    text-align: center;
+    padding: 20px 50px 80px;
+}
+
+.aside h3{
+    text-align: left;
 }
 
 article {
-    
-    flex: 5;
-    background-color: beige;
-    padding: 100px;
+    flex: 10;
+    padding: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 footer {
+    flex-shrink: 0;
     padding: 40px;
     font-size: 30px;
     text-align: center;
@@ -93,11 +77,44 @@ footer {
     color: black;
 }
 
-.detail {
-    
+footer p{
+    font-size: 15px;
 }
 
-.keninfo {
+.about-ken{
+    padding: 30%;
+    text-align: center;
+}
+
+.projects{
+    padding: 40%;
+    text-align: center;
+}
+
+.contact-ken{
+    padding: 10%;
+    text-align: center;
+}
+
+.resume{
+    padding: 40%;
+    text-align: center;
+}
+
+.aboutken {
+    padding: 20px;
+}
+
+.detail {
+    flex: 4;
+    background-color: beige;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
@@ -105,7 +122,8 @@ footer {
     flex: 0 0 580px;
 }
 
-.projectsinfo {
+
+/*.projectsinfo {
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
@@ -127,11 +145,24 @@ footer {
     border-radius: 10px;
     padding: 10px;
     flex: 0 0 580px;
-}
+}*/
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
     main,
-    nav {
+    nav,
+    article,
+    /*aside,*/
+    footer {
         flex-direction: column;
     }
 }
+
+/*@media screen and (min-width: 768px) {
+    main,
+    nav, 
+    article,
+    footer {
+        flex-direction: column;
+    }
+
+}*/
