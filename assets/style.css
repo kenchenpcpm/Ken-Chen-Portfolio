@@ -81,14 +81,14 @@ article {
 footer {
     flex-shrink: 0;
     padding: 40px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     background: lightcyan;
     color: black;
 }
 
 footer p{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .about-ken{
@@ -132,39 +132,6 @@ footer p{
     flex: 0 0 450px;
 }
 
-/*
-.keninfo {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-
-.projectsinfo {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-
-.contactinfo {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-
-.resumeinfo {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-*/
 .card img {
     width: 100%;
 }
