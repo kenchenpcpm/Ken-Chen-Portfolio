@@ -13,17 +13,17 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1%;
+    align-items: baseline;
+    padding: -50%;
     background-color: lightcyan;
     color:black
     
 }
 
 h1 {
-    margin: 2%;
-    font-size: 300%;
-    font-family: serif;
+    margin: 1%;
+    font-size: 100px;
+    font-family: cursive;
 }
 
 h3 {
@@ -112,7 +112,7 @@ footer p{
 }
 
 .aboutken {
-    padding: 20px;
+    padding: 30px;
 }
 
 .detail {
@@ -124,7 +124,7 @@ footer p{
     justify-content: center;
 }
 
-.card {
+.Ken {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -132,8 +132,38 @@ footer p{
     flex: 0 0 450px;
 }
 
-.card img {
-    width: 100%;
+.Ken img {
+    float: left;
+    width: 30%;
+}
+
+.Ken header {
+    background-color: beige;
+}
+
+
+.Projects {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 450px;
+}
+
+.Contact {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 450px;
+}
+
+.Resume {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 450px;
 }
 
 @media screen and (max-width: 768px) {
