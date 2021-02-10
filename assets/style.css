@@ -5,6 +5,7 @@
 }
 
 body {
+    
     font-family: Arial;
     margin: 0;
     background-color: beige;
@@ -20,23 +21,34 @@ header {
     
 }
 
-header h1 {
+h1 {
     margin: 2%;
+    font-size: 300%;
+    font-family: serif;
+}
+
+h3 {
+    margin: 3% 0;
     font-size: 200%;
+    font-family: serif;
+}
+
+h4 {
+    font-size: 150%;
     font-family: serif;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     min-width: 300px;
-   }
+}
 
 nav a {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    text-align: center;
+    text-align: right;
 }
 
 main {
@@ -56,12 +68,8 @@ aside {
     padding: 20px 50px 80px;
 }
 
-.aside h3{
-    text-align: left;
-}
-
 article {
-    flex: 10;
+    flex: 4;
     padding: 80px;
     display: flex;
     flex-wrap: wrap;
@@ -116,53 +124,60 @@ footer p{
 
 .card {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 580px;
+    flex: 0 0 450px;
 }
 
-
-/*.projectsinfo {
+/*
+.keninfo {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 580px;
+    
+}
+
+.projectsinfo {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    
 }
 
 .contactinfo {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 580px;
+    
 }
 
 .resumeinfo {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 580px;
-}*/
-
-@media screen and (max-width: 768px) {
-    main,
-    nav,
-    article,
-    /*aside,*/
-    footer {
-        flex-direction: column;
-    }
+    
+}
+*/
+.card img {
+    width: 100%;
 }
 
-/*@media screen and (min-width: 768px) {
-    main,
-    nav, 
-    article,
-    footer {
+@media screen and (max-width: 768px) {
+    header, main {
         flex-direction: column;
     }
 
-}*/
+    section {
+        padding-right: 0;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+    }
+}
