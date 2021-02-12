@@ -38,12 +38,11 @@ h4 {
 }
 
 nav ul {
-    /*position: absolute;*/
     display: flex;
     justify-content:space-between;
     min-width: 300px;
     right: -5px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 nav a {
@@ -56,26 +55,24 @@ nav a {
 main {
     background-color: beige;
     display: flex;
-    flex: 1 1 0;;
-    max-width: 1200px;
-    margin: 2% auto;
     flex-wrap: wrap;
+    margin: 2% auto;
 }
 
 aside {
-    flex: 2;
+    flex: 1;
     border-width: 4px;
     border-right: solid;
     border-color: black;
-    /*padding: 20px 20px 20px;*/
 }
 
 article {
-    flex: 4;
-    padding: 80px;
+    flex: 3;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    border-collapse: separate;
+    border-spacing: 2px;
 }
 
 footer {
@@ -104,70 +101,47 @@ footer p{
     background-color: grey;
 }*/
 
-.detail {
-    flex: 2;
-    background-color: beige;
-    padding: 3px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.about-ken{
+.aboutken{
     padding: 30%;
+    height: 250px;
     text-align: center;
 }
 
 .projects{
     padding: 30%;
+    height: 500px;
     text-align: center;
 }
 
-.contact-ken{
+.contactken{
     padding: 30%;
+    height: 100px;
     text-align: center;
 }
 
 .resume{
     padding: 30%;
+    height: 150px;
     text-align: center;
-}
-
-.aboutken {
-    padding: 30px;
-}
-
-.detail {
-    flex: 8;
-    background-color: beige;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .Ken {
     border-style: solid;
     border-width: 3px;
+    height: 250px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 480px;
+    flex: 0 0 680px;
 }
 
 .Ken img {
     float: left;
-    width: 30%;
+    width: 25%;
 }
 
 .Ken header {
     background-color: beige;
 }
-
-.Contact img {
-    float: left;
-    width: 20%;
-}
-
 
 .Projects {
     display: flex;
@@ -176,12 +150,8 @@ footer p{
     border-width: 3px;
     border-radius: 20px;
     padding: 10px;
-    flex: 0 0 480px;
+    flex: 0 0 680px;
     align-content: space-around;
-}
-
-.project1 .project2 .project3 .project4 {
-    align-content: space-between
 }
 
 .project1{
@@ -222,7 +192,12 @@ footer p{
     border-width: 3px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 480px;
+    flex: 0 0 680px;
+}
+
+.Contact img {
+    float: left;
+    width: 20%;
 }
 
 .linkedin {
@@ -258,12 +233,11 @@ footer p{
 }
 
 .Resume {
-    
     border-style: solid;
     border-width: 3px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 480px;
+    flex: 0 0 680px;
 }
 
 .button {
