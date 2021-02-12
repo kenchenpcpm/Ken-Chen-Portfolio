@@ -233,7 +233,7 @@ footer p{
     flex: 0 0 100%;
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 3000px){
     article {
         flex-direction: column;
     }
