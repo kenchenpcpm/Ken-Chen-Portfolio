@@ -70,8 +70,7 @@ article {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border-collapse: separate;
-    border-spacing: 2px;
+    align-content: space-around;
 }
 
 footer {
@@ -125,7 +124,9 @@ footer p{
 }
 
 .Ken {
-    border-style: solid;
+    display: flex;
+    flex: wrap;
+    border-style:solid;
     border-width: 3px;
     height: 250px;
     border-radius: 10px;
@@ -233,11 +234,6 @@ footer p{
     flex: 0 0 100%;
 }
 
-@media screen and (min-width: 3000px){
-    article {
-        flex-direction: column;
-    }
-}
 
 @media screen and (max-width: 800px) {
     header, main {
