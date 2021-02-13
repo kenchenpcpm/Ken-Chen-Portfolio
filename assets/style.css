@@ -177,7 +177,22 @@ footer p{
     height: 250px;
     padding: 2.5px;
 }
+/*.Ken {
+    display: flex;
+    flex: wrap;
+    border-style:solid;
+    border-width: 3px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 100%;
+}
 
+.Ken img {
+    float: left;
+    width: 20%;
+    height: 220px;
+}*/
 .Contact {
     display: flex;
     flex-wrap: wrap;
@@ -189,19 +204,22 @@ footer p{
     flex: 0 0 100%;
 }
 
-.Contact img {
-    float: left;
-    width: 35%;
-    padding: 10px;
-}
 .linkedin {
     flex: 1;
+    
+    flex-wrap: wrap;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
     height: 100px;
     padding: 2.5px;
 }
+.linkedin img {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
 .cell {
     flex: 1;
     border-style: solid;
