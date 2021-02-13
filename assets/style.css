@@ -57,6 +57,7 @@ main {
     flex-wrap: wrap;
     margin: 2% auto;
     align-content: space-around;
+    align-self: auto;
 }
 
 aside {
@@ -64,6 +65,7 @@ aside {
     border-width: 4px;
     border-right: solid;
     border-color: black;
+    padding: 2px;
 }
 
 article {
@@ -73,6 +75,7 @@ article {
     flex-wrap: wrap;
     align-content: space-around;
     border-spacing: 2px;
+    padding: 2px;
 }
 
 footer {
